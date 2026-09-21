@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.contents {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background: teal; */
+    background-image: url(./Images/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.contents .nav-bar {
+    position: relative;
+    width: 100%;
+    height: 85px;
+    background: transparent;
+}
+
+.contents .nav-bar .logo {
+    position: absolute;
+    width: 100px;
+    height: 55px;
+    background: transparent;
+    top: 50%;
+    left: 8%;
+    transform: translate(0%, -50%);
+    background-image: url(./Images/logo.png);
+    background-position: center;
+    background-size: 80px 45px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.contents .nav-bar .sign-up {
+    position: absolute;
+    padding: 12px 30px;
+    background: transparent;
+    color: whitesmoke;
+    border: 1px solid white;
+    border-radius: 25px;
+    top: 50%;
+    right: 8%;
+    transform: translate(0%, -50%);
+    cursor: pointer;
+}
+
+.contents .intro-container {
+    position: relative;
+    width: 650px;
+    height: 350px;
+    background: transparent;
+    margin-top: 100px;
+    margin-left: 15px;
+}
+
+.contents .intro-container .intro-heading {
+    position: absolute;
+    font-size: 65px;
+    font-weight: bold;
+    color: whitesmoke;
+    top: 100px;
+    left: 110px;
+}
+
+.contents .intro-container .intro-text-one {
+    position: absolute;
+    font-size: 14px;
+    top: 80px;
+    left: 110px;
+    color: whitesmoke;
+    opacity: 0.8;
+}
+
+.contents .intro-container .tour-btn {
+    position: relative;
+    padding: 10px 28px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin-top: 275px;
+    margin-left: 110px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.contents .side-bar {
+    position: absolute;
+    width: 80px;
+    height: 100vh;
+    background: linear-gradient(#00545d, #000729);
+    top: 0px;
+    right: 0px;
+}
+
+/* background: linear-gradient (#00545d, #000729) */
+
+.contents .side-bar .menu-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 35px 28px;
+    cursor: pointer;
+}
+
+.contents .side-bar .socials {
+    margin-top: 100px;
+    margin-left: 25px;
+}
+
+.contents .side-bar .socials li {
+    list-style: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.contents .side-bar .inquire {
+    margin-top: 120px;
+    margin-left: 25px;
+}
+
+.contents .side-bar .inquire li {
+    list-style: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.contents .bubbles img {
+    width: 50px;
+    animation: bubbles 7s linear infinite;
+}
+
+.contents .bubbles {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: -70px;
+}
+
+@keyframes bubbles {
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+;
+
+
+.contents .bubbles img:nth-child(1) {
+    animation-delay: 2s;
+    width: 25px;
+}
+
+.contents .bubbles img:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.contents .bubbles img:nth-child(3) {
+    animation-delay: 3s;
+    width: 25px;
+}
+
+.contents .bubbles img:nth-child(4) {
+    animation-delay: 4.5s;
+}
+
+.contents .bubbles img:nth-child(5) {
+    animation-delay: 3s;
+}
+
+.contents .bubbles img:nth-child(6) {
+    animation-delay: 6s;
+    width: 20px;
+}
+
+.contents .bubbles img:nth-child(7) {
+    animation-delay: 7s;
+    width: 35px;
+}
